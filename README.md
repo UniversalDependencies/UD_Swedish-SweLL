@@ -1,7 +1,6 @@
 # Summary
 
-... 1-2 sentences (see [release checklist](http://universaldependencies.org/contributing/release_checklist.html#the-readme-file) for README guidelines) ...
-
+A treebank of L2 Swedish based on SweLL, the Swedish Learner Language corpus.
 
 # Introduction
 
@@ -28,15 +27,15 @@
 Data available since: UD v2.17
 License: CC BY-SA 4.0
 Includes text: yes
-Parallel: no
-Genre: TO-BE-SPECIFIED
+Parallel: swell
+Genre: learner-essays
 Lemmas: manual native
 UPOS: manual native
 XPOS: not available
-Features: manual native
+Features: automatic with corrections
 Relations: manual native
-Contributors: Masciolini, Arianna
-Contributing: here
+Contributors: Masciolini, Arianna; Berdicevskis, Aleksandrs; Szawerna, Maria Irena
+Contributing: elsewhere
 Contact: arianna.masciolini@gu.se
 ===============================================================================
 </pre>
