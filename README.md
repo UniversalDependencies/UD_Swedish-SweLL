@@ -27,7 +27,7 @@ A treebank of L2 Swedish based on SweLL, the Swedish Learner Language corpus.
 Data available since: UD v2.17
 License: CC BY-SA 4.0
 Includes text: yes
-Parallel: swell
+Parallel: no
 Genre: learner-essays
 Lemmas: manual native
 UPOS: manual native
