@@ -7,7 +7,7 @@ UD_Swedish-SweLL is a parallel learner treebank based on [SweLL](https://spraakb
 
 As of it first release, UD_Swedish-SweLL consists of a test set comprising 510 randomly selected sentences from [SweLL-gold](https://spraakbanken.gu.se/en/resources/swell-gold), a corpus of essays written by adult learners of Swedish as a second language (L2).
 All essays in SweLL-gold are manually pseudonymized, error-labelled and _normalized_, i.e. accompanied by a correction hypothesis.
-While the official UD 2.17 release only includes original learner sentences, such corrections are available in the [`not-to-release`](not-to-release/) folder of this repository. 
+While the official UD 2.17 release only includes original learner sentences, such corrections are available in the [`not-to-release`](not-to-release/sv_swell-ud-test-trg.conllu) folder of this repository. 
 
 # Annotation
 Each sentence-correction pair was initially annotated with UDPipe 2 using the `swedish-talbanken-ud-2.15-241121` model and later underwent extensive manual post-correction by two annotators, who are themselves L2 Swedish speakers. 
@@ -21,7 +21,9 @@ In particular:
 The general annotation principles for the annotation of interlanguage phenomena are the following:
 
 - __token-level annotation__ (lemmatization, POS tagging and morphological analysis) should be __purely descriptive__ of the observed word forms__ (also referred to as _literal_)
-- __dependency annotation__ should also be __as descriptive of the observed language use as possible, but grounded in the correction hypothesis__ of the sentence whenever different interpretations of the learner's intended meaning would lead to different analyses. This is to ensure comparability between learner productions and their corrections.
+- __dependency annotation__ should also be __as descriptive of the observed language use as possible, but grounded in the correction hypothesis__ of the sentence whenever different interpretations of the learner's intended meaning would lead to different analyses. This is to ensure comparability between learner productions and their corrections
+3. in general, __annotation__ should be __aware of transfer phenomena__.
+
 
 For a more comprehensive discussion of these principles, see [_Annotating Second Language in Universal Dependencies: a Review of Current Practices and Directions for Harmonized Guidelines_](https://aclanthology.org/2025.udw-1.17/) (Masciolini et al., UDW-SyntaxFest 2025) as well as the annotation guidelines for UD_Swedish-SweLL, available in the [`not-to-release`](not-to-release/) folder. 
 
