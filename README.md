@@ -25,7 +25,7 @@ The general annotation principles for the annotation of interlanguage phenomena 
 3. in general, __annotation__ should be __aware of transfer phenomena__.
 
 
-For a more comprehensive discussion of these principles, see [_Annotating Second Language in Universal Dependencies: a Review of Current Practices and Directions for Harmonized Guidelines_](https://aclanthology.org/2025.udw-1.17/) (Masciolini et al., UDW-SyntaxFest 2025) as well as the annotation guidelines for UD_Swedish-SweLL, available in the [`not-to-release`](not-to-release/) folder. 
+For a more comprehensive discussion of these principles, see [_Annotating Second Language in Universal Dependencies: a Review of Current Practices and Directions for Harmonized Guidelines_](https://aclanthology.org/2025.udw-1.17/) (Masciolini et al., UDW-SyntaxFest 2025) as well as the annotation guidelines for UD_Swedish-SweLL, available in the [`not-to-release`](not-to-release/guidelines.md) folder. 
 
 In rare cases (6 tokens), these principles clash with current UD validation rules. 
 When this happened, annotation was adjusted to comply with the general guidelines and the annotator's preferred analysis was moved to the MISC column under the key `IntendedXXX` (at the moment, only `IntendedDeprel` and `IntendedLemma` are attested).
