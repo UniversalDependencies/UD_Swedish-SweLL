@@ -1,5 +1,7 @@
 # Guidelines for the annotation of interlanguage phenomena in UD_Swedish-SweLL
 
+(NOTE: the examples in this file are SVG snippets that the GitHub Markdown previewer does not fully render at the time of writing. If you can't see any dependency trees, try downloading this file and opening it with a different Markdown renderer or copy its source [here](https://markdownlivepreview.com/))
+
 ## Contents
 
 <!-- TOC -->
