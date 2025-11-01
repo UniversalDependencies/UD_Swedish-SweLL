@@ -23,7 +23,7 @@
         - [Missing words S-M](#missing-words-s-m)
             - [Missing heads](#missing-heads)
             - [Missing adpositions](#missing-adpositions)
-    - [Wrong POS](#wrong-pos)
+        - [Wrong POS](#wrong-pos)
 
 <!-- /TOC -->
 
@@ -363,7 +363,7 @@ This is in line English-ESL, Italian-VALICO and Russian.
 
 #### Unclear usage and/or unrecognizable word
 
-If the usage of the word is unclear, we revert to `dep`.
+If the usage of the redundant word is unclear, we revert to `dep`.
 If the `UPOS` of the word is ambiguous or if the word is unrecognizable, the tag `X` is used.
 
 > __Example__:
@@ -416,5 +416,5 @@ As Chinese-CFL and Russian, we follow the guidelines for [promotion by head elis
 #### Missing adpositions
 Similar to [Redundant adposition](#redundant-adpositions), but easier: we use the `DEPREL` `obl` in both original and target, which is coherent with our overarching principles, as well as with the fact that obliques are not necessarily prepositional.
 
-## Wrong POS
+### Wrong POS
 We assign the `UPOS` and `FEATS` based on the surface form, the `DEPREL` based on the function the token plays in the sentence.
