@@ -2549,7 +2549,7 @@
 # text = Jag skulle villja att breätta om när jag kom till Sverige .
 1	Jag	jag	PRON	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing|PronType=Prs	5	nsubj	_	_
 2	skulle	skola	AUX	_	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
-3	villja	villja	AUX	_	Typo=Yes|VerbForm=Inf|Voice=Act	5	aux	_	CorrectionLabels=O|CorrectLemma=vilja
+3	villja	vilja	AUX	_	Typo=Yes|VerbForm=Inf|Voice=Act	5	aux	_	CorrectionLabels=O|IntendedLemma=vilja
 4	att	att	PART	_	_	5	mark	_	CorrectionLabels=S-R
 5	breätta	breätta	VERB	_	Typo=Yes|VerbForm=Inf|Voice=Act	0	root	_	CorrectionLabels=O
 6	om	om	ADP	_	_	9	mark	_	_
