@@ -10,34 +10,36 @@ All essays in SweLL-gold are manually pseudonymized, error-labelled and _normali
 While the official UD 2.17 release only includes original learner sentences, such corrections are available in the [`not-to-release`](not-to-release/sv_swell-ud-test-trg.conllu) folder of this repository. 
 
 # Annotation
-Each sentence-correction pair was initially annotated with UDPipe 2 using the `swedish-talbanken-ud-2.15-241121` model and later underwent extensive manual post-correction by two annotators, who are themselves L2 Swedish speakers. 
+Each sentence-correction pair was pre-annotated with UDPipe 2 using the `swedish-talbanken-ud-2.15-241121` model. 
+The resulting annotations underwent extensive manual post-correction.
+Each pair was edited by two annotators, who are themselves L2 Swedish speakers and worked in parallel, meeting periodically to resolve disagreements. 
 
 In particular:
 
 - __lemmas, UPOS tags and dependencies__ were checked systematically
-- __morphological features__ were only checked for tokens marked as learner errors in the source corpus and/or whose automatic lemmatization, POS tagging and dependency annotation were found to be incorrect
-- SweLL-gold __error labels__ are included in the MISC column and were used to automatically assign the `Typo=Yes` feature to tokens presenting orthography errors.
+- __morphological features__ were only checked for tokens marked as learner errors in the source corpus and/or whose automatic lemmatization, POS tagging and/or dependency annotation were found to be incorrect
+- SweLL-gold __error labels__, documented [here](https://gupea.ub.gu.se/bitstream/handle/2077/69434/gupea_2077_69434_1.pdf?sequence=1&isAllowed=y), are included in the MISC column and were used to automatically assign the `Typo=Yes` feature to tokens presenting orthography errors.
 
-The general annotation principles for the annotation of interlanguage phenomena are the following:
+The general annotation principles for the annotation of interlanguage phenomena are as follows:
 
 - __token-level annotation__ (lemmatization, POS tagging and morphological analysis) should be __purely descriptive__ of the observed word forms__ (also referred to as _literal_)
 - __dependency annotation__ should also be __as descriptive of the observed language use as possible, but grounded in the correction hypothesis__ of the sentence whenever different interpretations of the learner's intended meaning would lead to different analyses. This is to ensure comparability between learner productions and their corrections
-3. in general, __annotation__ should be __aware of transfer phenomena__.
+- in general, __annotation__ should be __aware of transfer phenomena__.
 
 
-For a more comprehensive discussion of these principles, see [_Annotating Second Language in Universal Dependencies: a Review of Current Practices and Directions for Harmonized Guidelines_](https://aclanthology.org/2025.udw-1.17/) (Masciolini et al., UDW-SyntaxFest 2025) as well as the annotation guidelines for UD_Swedish-SweLL, available in the [`not-to-release`](not-to-release/guidelines.md) folder. 
+For a more comprehensive discussion of these principles, see [_Annotating Second Language in Universal Dependencies: a Review of Current Practices and Directions for Harmonized Guidelines_](https://aclanthology.org/2025.udw-1.17/) (Masciolini et al., UDW-SyntaxFest 2025), as well as the annotation guidelines for UD_Swedish-SweLL, available in the [`not-to-release`](not-to-release/guidelines.md) folder. 
 
-In rare cases (6 tokens), these principles clash with current UD validation rules. 
-When this happened, annotation was adjusted to comply with the general guidelines and the annotator's preferred analysis was moved to the MISC column under the key `IntendedXXX` (at the moment, only `IntendedDeprel` and `IntendedLemma` are attested).
+In rare occasions (6 tokens), these principles clash with current UD validation rules. 
+When this was the case, annotation was adjusted to comply with the general guidelines and the annotator's preferred analysis was moved to the MISC column under the key `IntendedXXX` (at the moment, only `IntendedDeprel` and `IntendedLemma` are attested).
 This is, however, a temporary workaround pending a community discussion.
 
-## Metadata
+# Metadata
 SweLL-gold comes with rich learner metadata that cannot be redistributed in full due to licensing restrictions.
 We currently include:
 
 - `l1`: the first language(s) of the author of the essay*
 - `approximate_level`: `Nybörjare` (beginner), `Fortsättning` (intermediate) or `Avancerad` (advanced)
-- `writing_language`: the language in which the author of the sentence has better written proficiency*
+- `writing_language`: the language in which the author of the essay has better written proficiency*
 - `sent_id`: the sentence ID, whose format is `org-N-test` for original learner productions and `trg-N-test` for the corresponding correction hypotheses (`N` is a sequential ID)
 - `text`: the full text of the sentence (pre-tokenized)
 
@@ -46,14 +48,17 @@ We currently include:
 # Acknowledgments
 The manual annotation work has been carried out by Arianna Masciolini, Aleksandrs Berdicevskis and Maria Irena Szawerna, who thank Elena Volodina for her work on the source corpus, as well as for her participation in the initial UD annotation experiments.
 
+This work is funded by the Swedish national research infrastructure Språkbanken, jointly financially supported by the Swedish Research Council (2025–2028; grant 2023-00161) and the 10 participating partner institutions.
+It received further support by the CA21167 COST action UniDive, funded by COST (European Cooperation in Science and Technology).
 
 # Contributing
-If you spot annotation error or inconsistency, please open an issue in this repository.
+If you spot any annotation errors or inconsistencies, please open an issue in this repository.
+
 For practical and legal reason, however, the annotation work is carried out in a private repository where we have access to all learner metadata.
 If you want to get involved, you are much welcome get in touch with the treebank's maintainer at arianna.masciolini@gu.se.
 
 # References
-A paper describing UD_Swedish-SweLL is currently in preparation.
+A paper describing UD_Swedish-SweLL in detail is currently in preparation.
 Meanwhile, if you use the treebank in you work, you are encouraged to cite _SweLL with pride: How to put a learner corpus to good use_ (Volodina et al., Huminfra Handbook - forthcoming):
 
 ```bibtex
