@@ -1,0 +1,42 @@
+Running the following version of UD tools:
+commit 26e6c87a2f518322d15901a351199b6be6569062
+Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Fri Nov 7 15:39:58 2025 +0100
+Evaluating the following revision of UD_Swedish-SweLL:
+commit 91964a67a88cfba8483adf72e645a5793dcae849
+Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Tue Nov 11 15:38:11 2025 +0100
+CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
+Language-treebank code (from CoNLL-U file name) = 'sv_swell'
+Language code (from CoNLL-U file name) = 'sv'
+Found the following data files: sv_swell-ud-test.conllu
+Size: counted 8644 of 8644 words (nodes).
+Size: min(0, log((N/1000)**2)) = 4.31373087728928.
+Size: maximum value 13.815511 is for 1000000 words or more.
+Split: Did not find more than 10000 training words.
+Split: Did not find at least 10000 development words.
+Split: Did not find at least 10000 test words.
+Lemmas: source of annotation (from README) factor is 1.
+Universal POS tags: 16 out of 17 found in the corpus.
+Universal POS tags: source of annotation (from README) factor is 1.
+Features: 5735 out of 8644 total words have one or more features.
+Features: source of annotation (from README) factor is 0.5.
+Universal relations: 36 out of 37 found in the corpus.
+Universal relations: source of annotation (from README) factor is 1.
+Genres: found 1 out of 18 known.
+/net/work/people/zeman/unidep/tools/validate.py --lang sv --max-err=10 UD_Swedish-SweLL/sv_swell-ud-test.conllu
+[Line 3457 Sent org-219-test]: [L3 Warning fixed-gap] Gaps in fixed expression [1, 4] 'För * * sedan'
+[Line 10294 Sent org-458-test]: [L3 Warning obl-should-be-nmod] The parent (node [24] 'mer') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+Warnings: 2
+*** PASSED ***
+Validity: 1
+(weight=0.111111111111111) * (score{features}=0.5) = 0.0555555555555556
+(weight=0.111111111111111) * (score{genres}=0.0555555555555556) = 0.00617283950617284
+(weight=0.111111111111111) * (score{lemmas}=1) = 0.111111111111111
+(weight=0.37037037037037) * (score{size}=0.312238252737068) = 0.115643797310025
+(weight=0.0740740740740741) * (score{split}=0.01) = 0.000740740740740741
+(weight=0.111111111111111) * (score{tags}=0.941176470588235) = 0.104575163398693
+(weight=0.111111111111111) * (score{udeprels}=0.972972972972973) = 0.108108108108108
+(TOTAL score=0.501907315730406) * (availability=1) * (validity=1) = 0.501907315730406
+STARS = 2.5
+UD_Swedish-SweLL	0.501907315730406	2.5
