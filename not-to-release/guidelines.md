@@ -6,24 +6,24 @@
 
 <!-- TOC -->
 
-- [Guidelines for the annotation of interlanguage phenomena in UD_Swedish-SweLL](#guidelines-for-the-annotation-of-interlanguage-phenomena-in-ud_swedish-swell)
-    - [Contents](#contents)
-    - [General principles](#general-principles)
-    - [Guidelines for specific phenomena](#guidelines-for-specific-phenomena)
-        - [Over-segmentation](#over-segmentation)
-            - [Words](#words)
-            - [Sentences](#sentences)
-        - [Under-segmentation](#under-segmentation)
-            - [Words](#words)
-            - [Sentences](#sentences)
-        - [Typos/spelling errors](#typosspelling-errors)
-        - [Redundant words S-R](#redundant-words-s-r)
-            - [Redundant adpositions](#redundant-adpositions)
-            - [Unclear usage and/or unrecognizable word](#unclear-usage-andor-unrecognizable-word)
-        - [Missing words S-M](#missing-words-s-m)
-            - [Missing heads](#missing-heads)
-            - [Missing adpositions](#missing-adpositions)
-        - [Wrong POS](#wrong-pos)
+- [Guidelines for the annotation of interlanguage phenomena in UD\_Swedish-SweLL](#guidelines-for-the-annotation-of-interlanguage-phenomena-in-ud_swedish-swell)
+  - [Contents](#contents)
+  - [General principles](#general-principles)
+  - [Guidelines for specific phenomena](#guidelines-for-specific-phenomena)
+    - [Over-segmentation](#over-segmentation)
+      - [Words](#words)
+      - [Sentences](#sentences)
+    - [Under-segmentation](#under-segmentation)
+      - [Words](#words-1)
+      - [Sentences](#sentences-1)
+    - [Typos/spelling errors](#typosspelling-errors)
+    - [Redundant words (`S-R`)](#redundant-words-s-r)
+      - [Redundant adpositions](#redundant-adpositions)
+      - [Unclear usage and/or unrecognizable word](#unclear-usage-andor-unrecognizable-word)
+    - [Missing words (`S-M`)](#missing-words-s-m)
+      - [Missing heads](#missing-heads)
+      - [Missing adpositions](#missing-adpositions)
+    - [Wrong POS](#wrong-pos)
 
 <!-- /TOC -->
 
@@ -47,7 +47,7 @@ Principle 2. has three more practical implications:
 
 > __Example:__ "båda" is tagged as a (plural) `ADJ` but assigned the relation type `cc` because it is used like the coordinating conjunction "både".
 >
-><svg width="297"
+><svg style="background-color:white" width="297"
 >     height="115"
 >     viewBox="0 0 297 115"
 >     version="1.1"
@@ -97,7 +97,7 @@ This is in agreement with the Italian-VALICO guidelines for syntactic calques.
 
 > __Example__: The learner is a speaker of English, so "bus resa" is annotated as an English `compound`, even though Swedish-specific guidelines recommend only using this label for foreign expressions.
 >
-> <svg width="205" height="135" viewBox="0 0 205 135" version="1.1" xmlns="http://www.w3.org/2000/svg">
+> <svg style="background-color:white" width="205" height="135" viewBox="0 0 205 135" version="1.1" xmlns="http://www.w3.org/2000/svg">
 >  <text x="5" y="128" font-size="16">en</text>
 >  <text x="42" y="128" font-size="16">lång</text>
 >  <text x="88" y="128" font-size="16">bus</text>
@@ -135,7 +135,7 @@ Otherwise, we follow standard guidelines and use [`goeswith`](https://universald
 
 > __Example 1__:
 > 
-> <svg width="147" height="95" viewBox="0 0 147 95" version="1.1" xmlns="http://www.w3.org/2000/svg">
+> <svg style="background-color:white" width="147" height="95" viewBox="0 0 147 95" version="1.1" xmlns="http://www.w3.org/2000/svg">
 >   <text x="5" y="88" font-size="16">tänkar</text>
 >   <text x="69" y="88" font-size="16">tagande</text>
 >   <text x="5" y="73" font-size="10">NOUN</text>
@@ -151,7 +151,7 @@ Otherwise, we follow standard guidelines and use [`goeswith`](https://universald
 >
 > __Example 2__:
 > 
-> <svg width="268" height="115" viewBox="0 0 268 115" version="1.1" xmlns="http://www.w3.org/2000/svg">
+> <svg style="background-color:white" width="268" height="115" viewBox="0 0 268 115" version="1.1" xmlns="http://www.w3.org/2000/svg">
 >  <text x="5" y="108" font-size="16">Mitt</text>
 >  <text x="51" y="108" font-size="16">favoritt</text>
 >  <text x="133" y="108" font-size="16">plats</text>
@@ -180,7 +180,7 @@ Otherwise, we follow standard guidelines and use [`goeswith`](https://universald
 > 
 > __Example 3__:
 >
-> <svg width="223" height="115" viewBox="0 0 223 115" version="1.1" xmlns="http://www.w3.org/2000/svg">
+> <svg style="background-color:white" width="223" height="115" viewBox="0 0 223 115" version="1.1" xmlns="http://www.w3.org/2000/svg">
 >   <text x="5" y="108" font-size="16">det</text>
 >   <text x="51" y="108" font-size="16">är</text>
 >   <text x="88" y="108" font-size="16">jätte</text>
@@ -211,7 +211,7 @@ In original-correction pairs where the original consists of 2 (or potentially mo
 
 > __Example__:
 >
-> <svg width="864" height="135" viewBox="0 0 864 135" version="1.1" xmlns="http://www.w3.org/2000/svg">
+> <svg style="background-color:white" width="864" height="135" viewBox="0 0 864 135" version="1.1" xmlns="http://www.w3.org/2000/svg">
 >  <text x="5" y="128" font-size="16">När</text>
 >  <text x="60" y="128" font-size="16">jag</text>
 >  <text x="106" y="128" font-size="16">känner</text>
@@ -310,12 +310,12 @@ If an original learner sentence is re-segmented into two sentences by the correc
 Following Italian-Valico, single-token typos and orthographical errors are, whenever possible, lemmatized preserving the errors they contain. 
 For instance:
 
-| `FORM` | `LEMMA` | corrected `LEMMA` | `CorrectionLabel` | comments |
-| --- | --- | --- | --- | --- |
-| traffik | traffik | trafik | O | simple misspelling |
-| förslagor | förslaga | förslag | M-F | lemma based on the gender of the incorrect form |
-| Landerna | land | land | O | misspelling that cannot be preserved |
-| däref$nt | däref$nt | därefter | O | major misspelling left as is |
+| `FORM`    | `LEMMA`  | corrected `LEMMA` | `CorrectionLabel` | comments                                        |
+| --------- | -------- | ----------------- | ----------------- | ----------------------------------------------- |
+| traffik   | traffik  | trafik            | O                 | simple misspelling                              |
+| förslagor | förslaga | förslag           | M-F               | lemma based on the gender of the incorrect form |
+| Landerna  | land     | land              | O                 | misspelling that cannot be preserved            |
+| däref$nt  | däref$nt | därefter          | O                 | major misspelling left as is                    |
 
 Rationale:
 
@@ -332,7 +332,7 @@ We use `obl`.
 
 > __Example__:
 >
-> <svg width="232" height="135" viewBox="0 0 232 135" version="1.1" xmlns="http://www.w3.org/2000/svg">
+> <svg style="background-color:white" width="232" height="135" viewBox="0 0 232 135" version="1.1" xmlns="http://www.w3.org/2000/svg">
 >   <text x="5" y="128" font-size="16">Krama</text>
 >   <text x="60" y="128" font-size="16">till</text>
 >   <text x="106" y="128" font-size="16">träd</text>
@@ -368,7 +368,7 @@ If the `UPOS` of the word is ambiguous or if the word is unrecognizable, the tag
 
 > __Example__:
 >
-> <svg width="326" height="155" viewBox="0 0 326 155" version="1.1" xmlns="http://www.w3.org/2000/svg">
+> <svg style="background-color:white" width="326" height="155" viewBox="0 0 326 155" version="1.1" xmlns="http://www.w3.org/2000/svg">
 >   <text x="5" y="148" font-size="16">att</text>
 >   <text x="51" y="148" font-size="16">stänga</text>
 >   <text x="115" y="148" font-size="16">som</text>
