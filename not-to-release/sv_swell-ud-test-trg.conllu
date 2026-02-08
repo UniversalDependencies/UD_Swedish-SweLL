@@ -7000,7 +7000,7 @@
 3	jag	jag	PRON	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing|PronType=Prs	2	nsubj	_	_
 4	nästan	nästan	ADV	_	_	5	advmod	_	_
 5	alltid	alltid	ADV	_	_	2	advmod	_	_
-6	second	second	ADJ	_	Degree=Pos|Foreign=Yes	7	compound	_	Lang=en
+6	second	second	ADJ	_	Degree=Pos|Foreign=Yes	7	amod	_	Lang=en
 7	hand	hand	NOUN	_	Foreign=Yes|Number=Sing	2	obl	_	Lang=en
 8	,	,	PUNCT	_	_	12	punct	_	_
 9	eftersom	eftersom	SCONJ	_	_	12	mark	_	_
