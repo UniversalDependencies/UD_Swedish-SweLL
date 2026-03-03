@@ -90,7 +90,7 @@ UPOS: manual native
 XPOS: not available
 Features: automatic with corrections
 Relations: manual native
-Contributors: Masciolini, Arianna; Berdicevskis, Aleksandrs; Szawerna, Maria Irena
+Contributors: Masciolini, Arianna; Berdicevskis, Aleksandrs; Szawerna, Maria Irena; Grand-Clement, Caroline
 Contributing: elsewhere
 Contact: arianna.masciolini@gu.se
 ===============================================================================
