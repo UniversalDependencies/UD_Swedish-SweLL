@@ -36,7 +36,7 @@
 
 In practice, 1. means that, whenever possible:
 
-- derivation and orthography errors are preserved in the lemmas
+- derivation ~~and orthography errors~~ are preserved in the lemmas (__UD 2.18 update__: following [this discussion](https://github.com/UniversalDependencies/docs/issues/1179), misspelled words are assigned 2 lemmas: the normalized one in the LEMMA field and a lemma preserving the misspelling, stored as `SurfaceLemma` in MISC; see below for further details)
 - UPOS tags and morphological features are assigned based on the observed word forms rather than the context in which they occur and the syntactic role they fill
 
 Principle 2. has three more practical implications:
@@ -307,20 +307,17 @@ We follow Korean-KSL and treat under-segmented words as single tokens.
 If an original learner sentence is re-segmented into two sentences by the corrector, the two sentences in the correction are treated as a single unit and linked with a `parataxis` relation.
 
 ### Typos/spelling errors
-Following Italian-Valico, single-token typos and orthographical errors are, whenever possible, lemmatized preserving the errors they contain. 
+(__updated for UD 2.18__ following [this discussion](https://github.com/UniversalDependencies/docs/issues/1179)
+
+Misspelled words are lemmatized according to the target form.
+When the misspelling affects the word's stem, however, they are also assigned a `SurfaceLemma` in MISC.
+The latter preserves any errors they contain, according to our initial annotation guidelines following Italian-Valico. 
 For instance:
 
-| `FORM`    | `LEMMA`  | corrected `LEMMA` | `CorrectionLabel` | comments                                        |
-| --------- | -------- | ----------------- | ----------------- | ----------------------------------------------- |
-| traffik   | traffik  | trafik            | O                 | simple misspelling                              |
-| förslagor | förslaga | förslag           | M-F               | lemma based on the gender of the incorrect form |
-| Landerna  | land     | land              | O                 | misspelling that cannot be preserved            |
-| däref$nt  | däref$nt | därefter          | O                 | major misspelling left as is                    |
-
-Rationale:
-
-- if we use the corrected lemma, some information is lots, especially when it comes to morphological inflection errors (`M`). _förslaga_, for instance, with `Gender=Com`, which is coherent with the observed form, whereas the correct lemma, _förslag_ forces `Gender=Neut`
-- since this is a parallel treebank, the correct lemma can always be retrieved from the correction hypothesis (and added as a `CorrectLemma` in `MISC`).
+| `FORM`   | `LEMMA` | `SurfaceLemma` | `CorrectionLabel` | comments                                               |
+| -------- | ------- | -------------- | ----------------- | ------------------------------------------------------ |
+| traffik  | trafik  | traffik        | O                 | misspelling affecting the stem                         |
+| Landerna | land    | land           | O                 | misspelling of a particular form (cannot be preserved) |
 
 ### Redundant words (`S-R`)
 Redundant (typically function) words (correction-labelled as `S-R`, i.e. Syntax - Redundant) can often be annotated straightforwardly (e.g. "tänker __att__ stänga" is annotated as `PART`+`mark`). 
