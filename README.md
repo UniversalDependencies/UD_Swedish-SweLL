@@ -54,7 +54,7 @@ The manual annotation work has been carried out by Arianna Masciolini, Aleksandr
 In particular, we want to thank Elena Volodina for her participation in the initial annotation experiments and Lisa Rudebeck for her clarifications about the original error annotations.
 
 This work is funded by the Swedish national research infrastructure Språkbanken, jointly financially supported by the Swedish Research Council (2025–2028; grant 2023-00161) and the 10 participating partner institutions.
-It received further support by the CA21167 COST action [UniDive -- Universality, diversity and idiosyncrasy in language technology](https://unidive.lisn.upsaclay.fr/), funded by COST (European Cooperation in Science and Technology).
+It received further support by the CA21167 COST action [UniDive -- Universality, diversity and idiosyncrasy in language technology](https://unidive.lisn.upsaclay.fr/).
 
 # Contributing
 If you spot any annotation errors or inconsistencies, please open an issue in this repository.
