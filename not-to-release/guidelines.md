@@ -301,7 +301,51 @@ In original-correction pairs where the original consists of 2 (or potentially mo
 
 #### Words
 We follow Korean-KSL and treat under-segmented words as single tokens. 
-`UPOS` and `DEPREL` are determined based on what would be the syntactic head if the words was correctly segmented. 
+The `UPOS` field is determined based on what the syntactic head would be if the words was correctly segmented, the `DEPREL` based on the observed language use.
+For instance:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<svg style="background-color:white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="432.0" height="145" viewBox="0 0 432.0 145">
+<defs>
+</defs>
+<text x="0" y="105" font-size="10" fill="black" font-style="normal" font-weight="bold">ADV</text>
+<text x="0" y="120" font-size="16" fill="black" font-style="italic" font-weight="bold">Tillsist</text>
+<text x="0" y="132" font-size="12" fill="black" font-style="normal" font-weight="bold">at.last</text>
+<text x="105.0" y="105" font-size="10" fill="black" font-style="normal" font-weight="normal">VERB</text>
+<text x="105.0" y="120" font-size="16" fill="black" font-style="italic" font-weight="normal">reste</text>
+<text x="105.0" y="132" font-size="12" fill="black" font-style="normal" font-weight="normal">traveled</text>
+<text x="192.0" y="105" font-size="10" fill="black" font-style="normal" font-weight="normal">PRON</text>
+<text x="192.0" y="120" font-size="16" fill="black" font-style="italic" font-weight="normal">hon</text>
+<text x="192.0" y="132" font-size="12" fill="black" font-style="normal" font-weight="normal">she</text>
+<text x="243.0" y="105" font-size="10" fill="black" font-style="normal" font-weight="normal">ADP</text>
+<text x="243.0" y="120" font-size="16" fill="black" font-style="italic" font-weight="normal">till</text>
+<text x="243.0" y="132" font-size="12" fill="black" font-style="normal" font-weight="normal">to</text>
+<text x="294.0" y="105" font-size="10" fill="black" font-style="normal" font-weight="normal">PROPN</text>
+<text x="294.0" y="120" font-size="16" fill="black" font-style="italic" font-weight="normal">Sverige</text>
+<text x="294.0" y="132" font-size="12" fill="black" font-style="normal" font-weight="normal">Sweden</text>
+<text x="372.0" y="105" font-size="10" fill="black" font-style="normal" font-weight="normal">PUNCT</text>
+<text x="372.0" y="120" font-size="16" fill="black" font-style="italic" font-weight="normal">.</text>
+<text x="372.0" y="132" font-size="12" fill="black" font-style="normal" font-weight="normal">.</text>
+<path d="M11.42857142857143,90 Q11.42857142857143,73,28.0952380952381,73 L96.9047619047619,73 Q113.57142857142857,73,113.57142857142857,90" stroke="black" fill="none" />
+<path d="M11.42857142857143,90 L8.42857142857143,84 L14.42857142857143,84 Z" stroke="black" fill="black" />
+<text x="44.5" y="70" font-size="10" fill="black" font-style="normal" font-weight="bold">advmod</text>
+<path d="M126.72413793103448,90 Q126.72413793103448,73,143.39080459770113,73 L193.60919540229887,73 Q210.27586206896552,73,210.27586206896552,90" stroke="black" fill="none" />
+<path d="M210.27586206896552,90 L207.27586206896552,84 L213.27586206896552,84 Z" stroke="black" fill="black" />
+<text x="157.25" y="70" font-size="10" fill="black" font-style="normal" font-weight="normal">nsubj</text>
+<path d="M255.94117647058823,90 Q255.94117647058823,73,272.6078431372549,73 L284.3921568627451,73 Q301.05882352941177,73,301.05882352941177,90" stroke="black" fill="none" />
+<path d="M255.94117647058823,90 L252.94117647058823,84 L258.94117647058823,84 Z" stroke="black" fill="black" />
+<text x="269.5" y="70" font-size="10" fill="black" font-style="normal" font-weight="normal">case</text>
+<path d="M125.7936507936508,90 Q125.7936507936508,57,159.12698412698413,57 L279.8730158730159,57 Q313.2063492063492,57,313.2063492063492,90" stroke="black" fill="none" />
+<path d="M313.2063492063492,90 L310.2063492063492,84 L316.2063492063492,84 Z" stroke="black" fill="black" />
+<text x="212.75" y="54" font-size="10" fill="black" font-style="normal" font-weight="normal">obl</text>
+<path d="M125.56179775280899,90 Q125.56179775280899,40,175.56179775280899,40 L341.43820224719104,40 Q391.43820224719104,40,391.43820224719104,90" stroke="black" fill="none" />
+<path d="M391.43820224719104,90 L388.43820224719104,84 L394.43820224719104,84 Z" stroke="black" fill="black" />
+<text x="247.25" y="37" font-size="10" fill="black" font-style="normal" font-weight="normal">punct</text>
+<path d="M120.0,-5 L120.0,90" stroke="black" />
+<path d="M120.0,90 L117.0,84 L123.0,84 Z" stroke="black" fill="black" />
+<text x="125.0" y="10" font-size="10" fill="black">root</text>
+</svg>
 
 #### Sentences
 If an original learner sentence is re-segmented into two sentences by the corrector, the two sentences in the correction are treated as a single unit and linked with a `parataxis` relation.
@@ -312,12 +356,14 @@ If an original learner sentence is re-segmented into two sentences by the correc
 Misspelled words are lemmatized according to the target form.
 When the misspelling affects the word's stem, however, they are also assigned a `SurfaceLemma` in MISC.
 The latter preserves any errors they contain, according to our initial annotation guidelines following Italian-Valico. 
+We stick to this approach even when an error that is clearly ortographical results in a surface form that happens to coincide with a valid form of a word that belongs to a different class (e.g. _jag som kommer **frön** ett land i melanöster_).
 For instance:
 
-| `FORM`   | `LEMMA` | `SurfaceLemma` | `CorrectionLabel` | comments                                               |
-| -------- | ------- | -------------- | ----------------- | ------------------------------------------------------ |
-| traffik  | trafik  | traffik        | O                 | misspelling affecting the stem                         |
-| Landerna | land    | land           | O                 | misspelling of a particular form (cannot be preserved) |
+| `FORM`   | `LEMMA` | `SurfaceLemma` | `CorrectionLabel` | comments                                                                     |
+| -------- | ------- | -------------- | ----------------- | ---------------------------------------------------------------------------- |
+| traffik  | trafik  | traffik        | O                 | misspelling affecting the stem                                               |
+| frön     | från    | frön           | O                 | misspelling that coincides with the plural indefinite of another word, _frö_ |
+| Landerna | land    | land           | O                 | misspelling of a particular form (cannot be preserved)                       |
 
 ### Redundant words (`S-R`)
 Redundant (typically function) words (correction-labelled as `S-R`, i.e. Syntax - Redundant) can often be annotated straightforwardly (e.g. "tänker __att__ stänga" is annotated as `PART`+`mark`). 
