@@ -3040,7 +3040,7 @@
 # text = Vi har lite balkong med olika blomma ute .
 1	Vi	vi	PRON	_	Case=Nom|Definite=Def|Gender=Com|Number=Plur|PronType=Prs	2	nsubj	_	_
 2	har	ha	VERB	_	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-3	lite	liten	ADJ	_	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	4	amod	_	CorrectionLabels=M-Other
+3	lite	liten	ADV	_	Degree=Pos	4	amod	_	CorrectionLabels=M-Other
 4	balkong	balkong	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	2	obj	_	_
 5	med	med	ADP	_	_	7	case	_	_
 6	olika	olik	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	7	amod	_	_
