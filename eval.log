@@ -1,10 +1,10 @@
 Running the following version of UD tools:
-commit b39dc4111bb13658bc0c204b48bb78b492e45d2b
+commit 59781c63b5b1c2ba74cd2b965d93f371e1c9d36a
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Tue May 5 17:01:41 2026 +0200
+Date:   Tue Nov 10 13:08:27 2026 +0100
 Evaluating the following revision of UD_Swedish-SweLL:
-commit 428ecbfd59e204a3f9eca4ff627c31b88381bf06
-Merge: b4d3680 e37dd3e
+commit 88dcd7be05a59c68884bfddd7277d47e7c6dad9c
+Merge: 48548b1 20d7e68
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
 CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
 Language-treebank code (from CoNLL-U file name) = 'sv_swell'
