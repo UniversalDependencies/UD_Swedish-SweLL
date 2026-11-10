@@ -15,9 +15,9 @@
   <fusions unique="0" /><!--  -->
   <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
   <tags unique="16">
-    <tag name="ADJ">877</tag><!-- bra, viktig, olik, många, ny, annan, stor, mycket, själv, första -->
+    <tag name="ADJ">876</tag><!-- bra, viktig, olik, många, ny, annan, stor, mycket, själv, första -->
     <tag name="ADP">980</tag><!-- i, för, på, till, med, om, av, från, efter, mot -->
-    <tag name="ADV">755</tag><!-- hur, så, mycket, där, också, därför, här, kanske, bara, ut -->
+    <tag name="ADV">756</tag><!-- hur, så, mycket, där, också, därför, här, kanske, bara, ut -->
     <tag name="AUX">663</tag><!-- vara, kunna, skola, ha, måste, vilja, få, bli, komma, böra -->
     <tag name="CCONJ">508</tag><!-- och, men, eller, så, utan, både, samt, &, för, ju -->
     <tag name="DET">399</tag><!-- en, den, de, denna, varje, all, vilken, ingen, någon, no -->
@@ -37,9 +37,9 @@
     <feat name="Abbr" value="Yes" upos="ADJ,ADV,NOUN,PROPN">13</feat><!-- sfi, 200m, C, Mvh, ex, ex., kilo, kr, osv, osv. -->
     <feat name="Case" value="Acc" upos="PRON">196</feat><!-- sig, mig, oss, dem, varandra, dig, henne, honom -->
     <feat name="Case" value="Gen" upos="NOUN,PRON,PROPN">39</feat><!-- litteraturens, Sveriges, familjens, kyrkans, landets, omgivningens, systerns, Forsknings, Göteborgs, Isaks -->
-    <feat name="Case" value="Nom" upos="ADJ,ADV,NOUN,NUM,PRON,PROPN,VERB">3544</feat><!-- jag, man, vi, de, kläder, du, olika, människor, många, sverige -->
+    <feat name="Case" value="Nom" upos="ADJ,ADV,NOUN,NUM,PRON,PROPN,VERB">3543</feat><!-- jag, man, vi, de, kläder, du, olika, människor, många, sverige -->
     <feat name="Definite" value="Def" upos="ADJ,DET,NOUN,PRON,PROPN">1913</feat><!-- jag, det, vi, de, den, sig, mig, du, min, oss -->
-    <feat name="Definite" value="Ind" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">2352</feat><!-- en, man, ett, kläder, människor, vad, andra, språk, nya, barn -->
+    <feat name="Definite" value="Ind" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">2351</feat><!-- en, man, ett, kläder, människor, vad, andra, språk, nya, barn -->
     <feat name="Degree" value="Cmp" upos="ADJ,ADV">85</feat><!-- bättre, mer, mindre, äldre, enklare, lättare, svårare, vidare, biligare, billigare -->
     <feat name="Degree" value="Pos" upos="ADJ,ADV,NOUN">864</feat><!-- olika, bra, många, mycket, nya, andra, viktigt, själv, stor, viktig -->
     <feat name="Degree" value="Sup" upos="ADJ,ADV">63</feat><!-- bästa, flesta, viktigaste, sista, mest, minst, sist, bäst, näst, viktigast -->
@@ -50,11 +50,11 @@
     <feat name="Foreign" value="Yes" upos="ADJ,DET,NOUN">14</feat><!-- hand, second, best, crush, no, refunds, seafood, temperature -->
     <feat name="Gender" value="Com" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">2508</feat><!-- jag, en, man, vi, den, mig, kläder, du, människor, min -->
     <feat name="Gender" value="Fem" upos="NOUN">1</feat><!-- temperature -->
-    <feat name="Gender" value="Neut" upos="ADJ,DET,NOUN,NUM,PRON,PROPN">1118</feat><!-- det, ett, vad, språk, barn, sätt, år, viktigt, detta, land -->
+    <feat name="Gender" value="Neut" upos="ADJ,DET,NOUN,NUM,PRON,PROPN">1117</feat><!-- det, ett, vad, språk, barn, sätt, år, viktigt, detta, land -->
     <feat name="Mood" value="Imp" upos="VERB">13</feat><!-- Berätta, Ha, Hoppas, Kom, Krama, Sluta, Vakna, använd, bygg, försätt -->
     <feat name="Mood" value="Ind" upos="AUX,VERB">1478</feat><!-- är, kan, har, tycker, ska, var, finns, vill, kommer, måste -->
     <feat name="Number" value="Plur" upos="ADJ,DET,NOUN,PRON,VERB">1119</feat><!-- vi, de, kläder, människor, andra, oss, nya, alla, pengar, sina -->
-    <feat name="Number" value="Sing" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">2983</feat><!-- jag, det, en, man, ett, den, mig, du, min, vad -->
+    <feat name="Number" value="Sing" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">2982</feat><!-- jag, det, en, man, ett, den, mig, du, min, vad -->
     <feat name="NumType" value="Card" upos="NUM">54</feat><!-- två, 18, 1, tre, ett, fyra, 2, 25, 4, 50 -->
     <feat name="NumType" value="Ord" upos="ADJ">25</feat><!-- första, andra, tredje, Tredja, firsta -->
     <feat name="Polarity" value="Neg" upos="PART">14</feat><!-- inte -->
